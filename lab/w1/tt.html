@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSE-A Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .header {
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        .header h2 {
+            margin: 5px;
+            font-size: 20px;
+        }
+
+        .header h3 {
+            margin: 4px;
+            font-size: 16px;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin: 10px 45px;
+        }
+
+        table {
+            width: 95%;
+            margin: auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 12px 8px;
+            font-size: 14px;
+        }
+
+        th {
+            font-weight: bold;
+        }
+
+        .day {
+            font-weight: bold;
+            width: 8%;
+        }
+
+        .lunch {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            font-weight: bold;
+        }
+
+        .faculty {
+            margin-top: 20px;
+        }
+
+        .faculty td {
+            text-align: left;
+            padding: 9px;
+        }
+
+        .faculty td:first-child {
+            width: 35%;
+            font-weight: bold;
+        }
+
+        .faculty td:nth-child(2) {
+            width: 20%;
+        }
+
+        .faculty td:nth-child(3) {
+            width: 45%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2>VASAVI COLLEGE OF ENGINEERING (AUTONOMOUS)</h2>
+        <h3>DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</h3>
+        <h2><u>TIME TABLE </u></h2>
+        <h3>CLASS : B.E. V - SEMESTER (CSE-A)</h3>
+    </div>
+
+    <div class="info">
+        <span>YEAR: 2026-27</span>
+        <span>W.E.F. 03.08.2026</span>
+    </div>
+
+    <table>
+        <tr>
+            <th>TIME / DAY</th>
+            <th>9.40 AM<br>TO<br>10.40 AM</th>
+            <th>10.40 AM<br>TO<br>11.40 AM</th>
+            <th>11.40 AM<br>TO<br>12.40 PM</th>
+            <th>12.40 PM<br>TO<br>1.20 PM</th>
+            <th>1.20 PM<br>TO<br>2.20 PM</th>
+            <th>2.20 PM<br>TO<br>3.20 PM</th>
+            <th>3.20 PM<br>TO<br>4.20 PM</th>
+        </tr>
+
+        <tr>
+            <td class="day">MON</td>
+            <td colspan="2">IoT Lab [Lab-IV]</td>
+            <td colspan="1">Mentor / FSWD</td>
+            <td rowspan="6" class="lunch">LUNCH</td>
+            <td>OE</td>
+            <td>IoT</td>
+            <td>CN</td>
+        </tr>
+
+        <tr>
+            <td class="day">TUE</td>
+            <td>AI</td>
+            <td colspan="2">SDC-V (CS-II)</td>
+            <td>OE</td>
+            <td>CN</td>
+            <td>Sports / FSWD</td>
+        </tr>
+
+        <tr>
+            <td class="day">WED</td>
+            <td>DT</td>
+            <td>AI</td>
+            <td>IoT</td>
+            <td>OE</td>
+            <td colspan="2">AIML Lab [Lab-VI]</td>
+        </tr>
+
+        <tr>
+            <td class="day">THU</td>
+            <td>CN</td>
+            <td colspan="3">CN Lab [Project Lab]</td>
+            <td colspan="2">SDC-VI (TS-III)</td>
+            <td>DT</td>
+        </tr>
+
+        <tr>
+            <td class="day">FRI</td>
+            <td>IoT</td>
+            <td>AI</td>
+            <td>CN (T)</td>
+            <td>FSWD</td>
+            <td colspan="2">FSWD Lab [Project Lab]</td>
+        </tr>
+
+        <tr>
+            <td class="day">SAT</td>
+            <td>FSWD</td>
+            <td colspan="2">TBP-I / CISCO [Lab-V]</td>
+            <td colspan="2">ECA-II</td>
+            <td>IoT</td>
+        </tr>
+    </table>
+
+    <table class="faculty">
+        <tr>
+            <td>IoT (Internet of Things)</td>
+            <td>M. Alphonsa</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>FSWD (Full Stack Web Development)</td>
+            <td>S. Susmitha</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>CN (Computer Networks)</td>
+            <td>T. Naishitha</td>
+            <td>M. Alphonsa, M. Prashanthi, D. Ukhitha</td>
+        </tr>
+
+        <tr>
+            <td>AI (Artificial Intelligence)</td>
+            <td>Dr. T. Adilakshmi</td>
+            <td>Dr. S. Komal Kour, S. Swetha, P. Manju Reddy</td>
+        </tr>
+
+        <tr>
+            <td>DT (Design Thinking)</td>
+            <td>Lucy Sparam</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Introduction to Operating Systems</td>
+            <td>P. Nancy Celine</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Fundamentals of Artificial Intelligence</td>
+            <td>B. Revathi<br>D. Ukhitha</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Theme Based Project-I / CISCO</td>
+            <td>T. Naishitha, K. Manasa</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td colspan="3"><b>Extra-curricular Activity-II / Sports / Library</b> — Class Coordinator: T. Naishitha</td>
+        </tr>
+    </table>
+
+</body>
+</html>
