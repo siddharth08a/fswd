@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Celsius to Fahrenheit</h2>
+
+    <label>Enter Temperature (°C)</label>
+
+    <input
+        type="text"
+        id="celsius"
+        placeholder="Enter -50 to 150"
+        oninput="allowOnlyNumbers(this)"
+    >
+
+    <button onclick="convertTemperature()">Convert</button>
+
+    <h3 id="result"></h3>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
