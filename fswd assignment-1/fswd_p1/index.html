@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Admission Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Student Admission Form</h2>
+
+    <form id="admissionForm" onsubmit="return validateForm()">
+
+        <label>Student ID</label>
+        <input type="text" id="studentId">
+
+        <label>Name</label>
+        <input type="text" id="name">
+
+        <label>Date of Birth</label>
+        <input type="date" id="dob">
+
+        <label>Gender</label>
+        <div>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </div>
+
+        <label>Email</label>
+        <input type="text" id="email">
+
+        <label>Mobile Number</label>
+        <input type="text" id="mobile">
+
+        <label>Course</label>
+        <select id="course">
+            <option value="">Select Course</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="MECH">MECH</option>
+            <option value="CIVIL">CIVIL</option>
+        </select>
+
+        <label>Address</label>
+        <textarea id="address"></textarea>
+
+        <label>Parent's Contact Number</label>
+        <input type="text" id="parentMobile">
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
