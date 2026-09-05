@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart - TechBazaar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a href="Home.html" class="brand-logo">TechBazaar</a>
+    <nav>
+      <a href="Home.html">Home</a>
+      <a href="Product_Catalog.html">Products</a>
+      <a href="Shopping_Cart.html" class="active">Cart (2)</a>
+      <a href="Login.html">Login</a>
+    </nav>
+  </header>
+  <div class="container">
+    <h2 style="color:#3b429f; margin-bottom:20px;">Your Shopping Cart</h2>
+    <table class="cart-table">
+      <thead>
+        <tr><th>Item</th><th>Unit Price</th><th>Quantity</th><th>Subtotal</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Product 1:</strong> Wireless Headphones</td><td>Rs. 999</td><td>1</td><td>Rs. 999</td></tr>
+        <tr><td><strong>Product 2:</strong> Smart Fitness Watch</td><td>Rs. 1,499</td><td>1</td><td>Rs. 1,499</td></tr>
+      </tbody>
+      <tfoot>
+        <tr style="background:#f8fafc; font-weight:700;">
+          <td colspan="3" style="text-align:right;">Total Amount:</td>
+          <td style="color:#2563eb; font-size:18px;">Rs. 2,498</td>
+        </tr>
+      </tfoot>
+    </table>
+    <div style="display:flex; justify-content:space-between; margin-top:20px;">
+      <a href="Product_Catalog.html" class="btn-action" style="background:#64748b;">Continue Shopping</a>
+      <a href="#" class="btn-action" onclick="alert('Order placed successfully!')">Proceed to Checkout</a>
+    </div>
+  </div>
+  <footer>
+    <a href="Contact_Us.html">Contact us</a> | <a href="#">About us</a> | <a href="#">Terms and conditions</a>
+  </footer>
+</body>
+</html>
