@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter (Celsius to Fahrenheit)</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="card">
+    <h2>Temperature Converter</h2>
+    <p class="subtitle">Valid Range: <strong>-50°C to 150°C</strong></p>
+
+    <div class="input-box">
+      <label for="celsiusInput">Enter Temperature (°C):</label>
+      <input type="text" id="celsiusInput" placeholder="e.g. 25 or -10" autocomplete="off">
+    </div>
+
+    <div class="btn-row">
+      <button class="btn-convert" id="convertBtn">Convert to °F</button>
+      <button class="btn-clear" id="clearBtn">Clear</button>
+    </div>
+
+    <!-- Error Display -->
+    <div id="errorBox" class="error-box"></div>
+
+    <!-- Dynamic Result Display on Same Page -->
+    <div id="resultBox" class="result-box">
+      <div class="label">Converted Temperature</div>
+      <div id="fahrenheitValue" class="value">0°F</div>
+      <div id="conditionBadge" class="status-badge"></div>
+    </div>
+  </div>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
