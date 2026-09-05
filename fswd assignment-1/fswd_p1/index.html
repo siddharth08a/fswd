@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Admission Form</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-card">
+    <div class="header">
+      <h2>Student Admission Form</h2>
+      <p>Fill in all mandatory details marked with an asterisk (*)</p>
+    </div>
+
+    <div id="successBox" class="success-alert"></div>
+
+    <form id="admissionForm">
+      <!-- 1. Student ID -->
+      <div class="form-group">
+        <label for="studentId">Student ID <span class="required">*</span></label>
+        <input type="text" id="studentId" placeholder="e.g. 1602-24-733-051">
+        <span class="error-text" id="err_studentId"></span>
+      </div>
+
+      <!-- 2. Full Name -->
+      <div class="form-group">
+        <label for="fullName">Full Name <span class="required">*</span></label>
+        <input type="text" id="fullName" placeholder="Enter applicant's full name">
+        <span class="error-text" id="err_fullName"></span>
+      </div>
+
+      <!-- 3. Date of Birth -->
+      <div class="form-group">
+        <label for="dob">Date of Birth <span class="required">*</span></label>
+        <input type="date" id="dob">
+        <span class="error-text" id="err_dob"></span>
+      </div>
+
+      <!-- 4. Gender -->
+      <div class="form-group">
+        <label>Gender <span class="required">*</span></label>
+        <div class="radio-group">
+          <label class="radio-item"><input type="radio" name="gender" value="Male"> Male</label>
+          <label class="radio-item"><input type="radio" name="gender" value="Female"> Female</label>
+          <label class="radio-item"><input type="radio" name="gender" value="Other"> Other</label>
+        </div>
+        <span class="error-text" id="err_gender"></span>
+      </div>
+
+      <!-- 5. Email Address -->
+      <div class="form-group">
+        <label for="email">Email Address <span class="required">*</span></label>
+        <input type="email" id="email" placeholder="e.g. applicant@example.com">
+        <span class="error-text" id="err_email"></span>
+      </div>
+
+      <!-- 6. Mobile Number -->
+      <div class="form-group">
+        <label for="mobile">Mobile Number <span class="required">*</span></label>
+        <input type="text" id="mobile" maxlength="10" placeholder="10-digit mobile number">
+        <span class="error-text" id="err_mobile"></span>
+      </div>
+
+      <!-- 7. Course -->
+      <div class="form-group">
+        <label for="course">Course <span class="required">*</span></label>
+        <select id="course">
+          <option value="">-- Select Course --</option>
+          <option value="B.Tech Computer Science & Engineering">B.Tech - Computer Science & Engineering</option>
+          <option value="B.Tech Information Technology">B.Tech - Information Technology</option>
+          <option value="B.Tech Artificial Intelligence & Data Science">B.Tech - AI & Data Science</option>
+          <option value="B.Tech Electronics & Communication">B.Tech - Electronics & Communication</option>
+        </select>
+        <span class="error-text" id="err_course"></span>
+      </div>
+
+      <!-- 8. Address -->
+      <div class="form-group">
+        <label for="address">Address <span class="required">*</span></label>
+        <textarea id="address" rows="3" placeholder="Enter permanent residential address"></textarea>
+        <span class="error-text" id="err_address"></span>
+      </div>
+
+      <!-- 9. Parent's Contact Number -->
+      <div class="form-group">
+        <label for="parentMobile">Parent's Contact Number <span class="required">*</span></label>
+        <input type="text" id="parentMobile" maxlength="10" placeholder="10-digit parent's phone number">
+        <span class="error-text" id="err_parentMobile"></span>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="btn-group">
+        <button type="submit" class="btn btn-submit">Submit Application</button>
+        <button type="button" class="btn btn-reset" id="resetBtn">Reset</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- External JavaScript Validation Script -->
+  <script src="validation.js"></script>
+</body>
+</html>
